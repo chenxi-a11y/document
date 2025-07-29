@@ -6,6 +6,7 @@ import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
 export default defineConfig({
+  base: '/document/', 
   lang: 'zh-CN',
   title: "Tatsumi",
   description: "Tatsumi",
