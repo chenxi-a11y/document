@@ -1,0 +1,43 @@
+/* .vitepress/theme/custom.css */
+
+/* 返回顶部按钮的全局样式优化 */
+:root {
+  --back-to-top-bg: var(--vp-c-brand);
+  --back-to-top-hover-bg: var(--vp-c-brand-dark);
+  --back-to-top-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --back-to-top-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 深色模式变量 */
+.dark {
+  --back-to-top-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --back-to-top-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 确保返回顶部按钮不被其他元素遮挡 */
+.back-to-top {
+  z-index: 9999 !important;
+}
+
+/* 可选：为页面添加平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 可选：自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-text-3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-2);
+}
